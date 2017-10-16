@@ -1,0 +1,15 @@
+ACTION DEFAULTS
+ ACTION gamewinner ( DEFAULTVIEW=NO )
+ ACTION gameover   ( DEFAULTVIEW=NO )
+END
+
+LAYOUT ( MINWIDTH=50, MINHEIGHT=40, STYLE="minesweeper" )
+GRID
+{
+[sweeperwc                                                      ]
+}
+END #GRID
+END #LAYOUT
+
+ATTRIBUTES
+WEBCOMPONENT sweeperwc = formonly.sweeperwc, COMPONENTTYPE="minesweeper", SIZEPOLICY=FIXED, STRETCH=BOTH;

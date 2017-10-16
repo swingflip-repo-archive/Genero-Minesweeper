@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ANSI_X3.4-1968"?>
+<ToolBar>
+  <ToolBarItem name="bt_new_game" />
+  <ToolBarSeparator/>
+  <ToolBarItem name="exit" image="quit" text="Exit" />
+</ToolBar>
