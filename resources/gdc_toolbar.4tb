@@ -2,5 +2,8 @@
 <ToolBar>
   <ToolBarItem name="bt_new_game" />
   <ToolBarSeparator/>
-  <ToolBarItem name="exit" image="quit" text="Exit" />
+	<ToolBarItem name="options" image="fa-cog" text="Options" />
+	<ToolBarItem name="bt_about" image="fa-info" text="About" />
+	<ToolBarSeparator/>
+  <ToolBarItem name="close" image="quit" text="Exit" />
 </ToolBar>

@@ -250,12 +250,16 @@ FUNCTION open_application() #First Application window function
     IF global.g_info.deployment_type = "GDC"
     THEN
         OPEN WINDOW w WITH FORM "wc_minesweeper"
-				LET m_window = ui.Window.getCurrent()
-				LET m_form = m_window.getForm()
-				CALL m_form.loadToolBar("gdc_toolbar")
     ELSE
         OPEN WINDOW w WITH FORM "wc_minesweeper"
     END IF
+
+		IF global.g_info.deployment_type <> "GMA" AND global.g_info.deployment_type <> "GMI"
+		THEN
+				LET m_window = ui.Window.getCurrent()
+				LET m_form = m_window.getForm()
+				CALL m_form.loadToolBar("gdc_toolbar")
+		END IF
 
     LET TERMINATE = FALSE
     INITIALIZE global.g_instruction TO NULL
@@ -312,6 +316,25 @@ FUNCTION open_application() #First Application window function
                             DISPLAY err_get(status)
                         END TRY
 
+						ON ACTION bt_about
+								OPEN WINDOW w2 WITH FORM "wc_minesweeper_info" ATTRIBUTES(TEXT="Genero Minesweeper")
+								DISPLAY %"main.string.About" TO status
+								LET TERMINATE = FALSE
+
+										WHILE TERMINATE = FALSE
+												MENU
+
+												BEFORE MENU
+														#CALL DIALOG.setActionHidden("close",1)
+
+												ON ACTION CLOSE
+														LET TERMINATE = TRUE
+														EXIT MENU
+															
+												END MENU
+										END WHILE								
+								CLOSE WINDOW w2
+										
             ON ACTION gamewinner
 								CALL ui.Interface.frontCall("standard", "playSound", [os.path.join(os.path.pwd(),os.path.join("resources","tada.mp3"))], [])
                 CALL fgl_winmessage("Congratulations!", "YOU WIN!", "informaion")

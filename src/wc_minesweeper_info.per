@@ -1,0 +1,21 @@
+LAYOUT ( MINWIDTH=30, MINHEIGHT=28, STYLE="dialog" )
+VBOX 
+GRID
+{
+[splash                         ]
+[status                         ]
+[                               ]
+[                               ]
+[                               ]
+[                               ]
+[                               ]
+[                               ]
+}
+END
+END #VBOX
+END  #LAYOUT
+
+ATTRIBUTES
+IMAGE splash:splash, STYLE="centerImages noBorder", IMAGE="minesweeper", AUTOSCALE;
+TEXTEDIT status=FORMONLY.status, NOENTRY, SCROLLBARS=NONE, SIZEPOLICY=FIXED, STRETCH=BOTH, JUSTIFY=CENTER, STYLE="noBorder bigText";
+END

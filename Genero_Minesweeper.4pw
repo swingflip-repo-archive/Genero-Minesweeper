@@ -157,6 +157,7 @@
           <File filePath="src/main_gdc.per"/>
           <File filePath="src/splash_screen.per"/>
           <File filePath="src/wc_minesweeper.per"/>
+          <File filePath="src/wc_minesweeper_info.per"/>
           <File filePath="src/wc_minesweeper_select.per"/>
         </VirtualFolder>
         <VirtualFolder label="Tool Forms">

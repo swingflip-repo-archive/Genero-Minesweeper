@@ -26,3 +26,6 @@
 "main.string.Services_Disconnected"="Services Disconnected"
 "main.string.Services_Connected"="Services Connected"
 "main.string.Interact_Explanation"="Here are some local webcomponents to showcase interactivity within GGAT. The webcomponents are built using a combination of HTML5, Java and CSS"
+
+
+"main.string.About"="<p style='text-align:center;'><br /><br />Created by Ryan Hamlin\nryan@ryanhamlin.co.uk<br /><br />Built using Genero 3.10.06</p>"
