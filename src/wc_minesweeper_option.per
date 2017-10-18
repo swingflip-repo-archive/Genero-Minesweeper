@@ -1,0 +1,30 @@
+LAYOUT ( MINWIDTH=50, MINHEIGHT=28, STYLE="dialog" )
+VBOX 
+GROUP (TEXT=%"main.string.Options")
+GRID
+{
+[splash                         ]
+[connected                      ]
+[status                         ]
+[                               ]
+[                               ]
+[                               ]
+[                               ]
+[                               ]
+[                               ]
+[bt_admint                      ]
+[bt_logout                      ]
+}
+END
+END #GROUP
+END #VBOX
+END  #LAYOUT
+
+ATTRIBUTES
+IMAGE splash:splash, STYLE="centerImages noBorder", IMAGE="disconnected";
+LABEL connected=FORMONLY.connected, JUSTIFY=CENTER;
+TEXTEDIT status=FORMONLY.status, NOENTRY, SCROLLBARS=VERTICAL, SIZEPOLICY=FIXED, STRETCH=BOTH;
+BUTTON bt_admint : bt_admint, TEXT=%"connection.per.Admin_Tools", IMAGE="flaticon-settings", HIDDEN;
+BUTTON bt_logout : bt_logout, TEXT=%"connection.per.Logout", IMAGE="flaticon-eject";
+
+END

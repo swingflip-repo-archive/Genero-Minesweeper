@@ -21,7 +21,9 @@ GLOBALS
             g_online_ping_URL STRING,                         #URL of public site to test internet connectivity (i.e. http://www.google.com) 
             g_date_format STRING,                             #Datetime format. i.e.  "%d/%m/%Y %H:%M"
             g_default_language STRING,                        #The default language used within the application (i.e. EN)
-            g_local_images_available DYNAMIC ARRAY OF CHAR(2) #Available localisations for images.
+            g_local_images_available DYNAMIC ARRAY OF CHAR(2),#Available localisations for images.
+						g_USER_sound_enabled INTEGER,
+						g_USER_music_enabled INTEGER
       END RECORD,
 
 ################################################################################

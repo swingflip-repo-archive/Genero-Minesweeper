@@ -47,6 +47,7 @@
      <StyleAttribute name="toolBarPosition" value="none" />
      <StyleAttribute name="statusBarType" value="none" />
      <StyleAttribute name="errorMessagePosition" value="popup" />
+		 <StyleAttribute name="forceDefaultSettings" value="yes" />
   </Style>
   <Style name="Window.dialog3">
      <StyleAttribute name="windowType" value="modal" />

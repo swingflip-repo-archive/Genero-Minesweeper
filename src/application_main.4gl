@@ -44,7 +44,7 @@ FUNCTION initialise_app()
     #******************************************************************************#
 
         # RUN "set > /tmp/mobile.env" # Dump the environment for debugging.
-        #BREAKPOINT #Uncomment to step through application
+        # #Uncomment to step through application
         DISPLAY "\nStarting up " || global.g_application_title || " " || global.g_application_version || "...\n"
 
         #Uncomment the below to display device data when running.
@@ -287,6 +287,7 @@ FUNCTION open_application() #First Application window function
                 
             BEFORE MENU
                 CALL connection_test()
+								
 
             ON ACTION CLOSE
                 LET global.g_instruction = "go_back"
@@ -304,17 +305,24 @@ FUNCTION open_application() #First Application window function
                         ACCEPT INPUT
                     ON ACTION CANCEL
                         #Do Nothing
+
+										ON ACTION CLOSE
+												EXIT INPUT
                           
-                    AFTER INPUT
-                        END INPUT
-                        CLOSE WINDOW w2
-                        INITIALIZE f_result TO NULL
-                        TRY 
-                            CALL ui.Interface.frontCall("webcomponent","call",["formonly.sweeperwc","new_game",f_level],[f_result])
-                        CATCH
-                            ERROR err_get(status)
-                            DISPLAY err_get(status)
-                        END TRY
+                    AFTER INPUT                       
+                        LET f_result = "NEWGAME"
+								END INPUT
+								CLOSE WINDOW w2
+								IF f_result = "NEWGAME"
+								THEN
+										INITIALIZE f_result TO NULL
+										TRY 
+												CALL ui.Interface.frontCall("webcomponent","call",["formonly.sweeperwc","new_game",f_level],[f_result])
+										CATCH
+												ERROR err_get(status)
+												DISPLAY err_get(status)
+										END TRY
+								END IF
 
 						ON ACTION bt_about
 								OPEN WINDOW w2 WITH FORM "wc_minesweeper_info" ATTRIBUTES(TEXT="Genero Minesweeper")

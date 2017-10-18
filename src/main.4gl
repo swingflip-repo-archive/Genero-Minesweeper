@@ -16,7 +16,7 @@ GLOBALS "globals.4gl"
     
 MAIN
 #******************************************************************************# 
-    BREAKPOINT
+    
     #Detect user's locale and set language accordingly depending on available language packs.
     CALL ui.Interface.frontCall("standard", "feInfo", "userPreferredLang", global.g_info.locale)
 
@@ -37,7 +37,7 @@ FUNCTION load_localisation(f_locale, f_pre_window) #This auto loads the user's l
         f_string_buffer base.StringBuffer,
         f_require_reload SMALLINT
 
-    BREAKPOINT
+    
     LET f_require_reload = FALSE
     #Check if we have the locale.42s folder, if not then revert to defaults. 
     #If load_localisation() is called before window then f_pre_window = false else we need to reload current window

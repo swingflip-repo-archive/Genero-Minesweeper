@@ -138,7 +138,7 @@ FUNCTION sync_assets(f_asset_type, f_debug)
 								DISPLAY "FATAL ERROR: Asset: " || p_resources[f_index] || " doesn't exist!"
 								EXIT PROGRAM 9999
 						ELSE
-								BREAKPOINT
+								
 								IF os.path.copy(os.path.join(f_asset_assetname,p_resources[f_index]), f_assetpath)
 								THEN
 										LET f_msg = f_msg.append("OK - Loaded asset: " || p_resources[f_index] || "in to working directory\n")

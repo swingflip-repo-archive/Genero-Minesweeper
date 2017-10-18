@@ -5,8 +5,8 @@
   <ActionDefault name="insert" text="Insert" acceleratorName="F3" contextMenu="no"/>
   <ActionDefault name="append" text="Append" acceleratorName="Control-F3" contextMenu="no"/>
   <ActionDefault name="update" text="Update" />
-  <ActionDefault name="gamewinner" text="gamewinner" />
-  <ActionDefault name="gameover" />
+  <ActionDefault name="gamewinner" text="gamewinner" contextMenu="no" />
+  <ActionDefault name="gameover" text="gamewinner" contextMenu="no" />
 	<ActionDefault name="bt_new_game" text="New Game" image="fa-bomb" />
   <ActionDefault name="delete" validate="no" text="Delete" acceleratorName="F4" contextMenu="no"/>
   <ActionDefault name="help" validate="no" text="Help" acceleratorName="F1" contextMenu="no"/>

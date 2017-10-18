@@ -75,6 +75,7 @@
       <DynamicProperty name="packageId" value="com.ryanhamlin.Minesweeper"/>
       <DynamicProperty name="packageLabel" value="Genero Minesweeper"/>
       <DynamicProperty name="permissions" value="ACCESS_NETWORK_STATE;ACCESS_WIFI_STATE;CHANGE_NETWORK_STATE;INSTALL_SHORTCUT;INTERNET;MOUNT_FORMAT_FILESYSTEMS;READ_LOGS;READ_PHONE_STATE"/>
+      <Directory destinationDirectory="$(ProjectDir)/bin/resources" includedFiles="*.mp3" label="Assets" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
       <Directory description="Binaries" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="Binaries" recursive="false" sourceDirectory="$(ProjectDir)/bin"/>
       <Directory description="Configuration Files" destinationDirectory="$(ProjectDir)/bin" includedFiles="fglprofile,*.config" label="Config" recursive="false" sourceDirectory="$(ProjectDir)/config"/>
       <Directory description="Database" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.db" label="Database" recursive="false" sourceDirectory="$(ProjectDir)/database"/>
@@ -83,13 +84,14 @@
       <Directory description="Studio Library" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="libgst" recursive="false" sourceDirectory="$(GSTLIBRARYDIR)/bin"/>
       <Directory destinationDirectory="$(ProjectDir)/bin/defaults" includedFiles="*.42s" label="Localisation_Defaults" sourceDirectory="$(ProjectDir)/bin/defaults"/>
       <Directory destinationDirectory="$(ProjectDir)/bin/fr" includedFiles="*.42s" label="Localisation_FR" sourceDirectory="$(ProjectDir)/bin/fr"/>
-      <Directory description="Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.4ad,*.4st,*.42s,*.mp3" label="Resources" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
+      <Directory description="Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.4ad,*.4st,*.42s" label="Resources" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
       <Directory description="Template Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="mobile_dbapp.4ad,dbapp.4st" label="Resources_dbapp" recursive="false" sourceDirectory="$(GSTSETUPDIR)/styles"/>
       <Directory description="Web Components" destinationDirectory="$(ProjectDir)/bin/webcomponents" label="Webcomponents" sourceDirectory="$(ProjectDir)/webcomponents"/>
     </Package>
     <Package binaryName="Minesweeper_GAR" dependencies="212784684,400358049" description="GAR Package" label="Minesweeper_GAR" platform="Genero Application Server">
       <DynamicProperty name="packageId" value="Genero_Minesweeper"/>
       <DynamicProperty name="packageLabel" value="Genero Minesweeper"/>
+      <Directory destinationDirectory="$(ProjectDir)/bin/resources" includedFiles="*.mp3" label="Assets" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
       <Directory description="Binaries" destinationDirectory="$(ProjectDir)/bin/bin" includedFiles="*.42?" label="Binaries" recursive="false" sourceDirectory="$(ProjectDir)/bin"/>
       <Directory description="Configuration Files" destinationDirectory="$(ProjectDir)/bin/bin" includedFiles="fglprofile,*.config" label="Config" recursive="false" sourceDirectory="$(ProjectDir)/config"/>
       <Directory description="Database" destinationDirectory="$(ProjectDir)/bin/bin/" includedFiles="*.db" label="Database" recursive="false" sourceDirectory="$(ProjectDir)/database"/>
@@ -117,6 +119,7 @@
       <DynamicProperty name="icon87x87" value="$(ProjectDir)/images/icon/Icon-Small@3x.png"/>
       <DynamicProperty name="packageId" value="com.ryanhamlin.Minesweeper"/>
       <DynamicProperty name="packageLabel" value="Genero Minesweeper"/>
+      <Directory destinationDirectory="$(ProjectDir)/bin/resources" includedFiles="*.mp3" label="Assets" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
       <Directory description="Binaries" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="Binaries" recursive="false" sourceDirectory="$(ProjectDir)/bin"/>
       <Directory description="Configuration Files" destinationDirectory="$(ProjectDir)/bin" includedFiles="fglprofile,*.config" label="Config" recursive="false" sourceDirectory="$(ProjectDir)/config"/>
       <Directory description="Database" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.db" label="Database" recursive="false" sourceDirectory="$(ProjectDir)/database"/>
@@ -125,13 +128,14 @@
       <Directory description="Studio Library" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="libgst" recursive="false" sourceDirectory="$(GSTLIBRARYDIR)/bin"/>
       <Directory destinationDirectory="$(ProjectDir)/bin/defaults" includedFiles="*.42s" label="Localisation_Defaults" sourceDirectory="$(ProjectDir)/bin/defaults"/>
       <Directory destinationDirectory="$(ProjectDir)/bin/fr" includedFiles="*.42s" label="Localisation_FR" sourceDirectory="$(ProjectDir)/bin/fr"/>
-      <Directory description="Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.4ad,*.4st,*.42s,*.mp3" label="Resources" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
+      <Directory description="Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.4ad,*.4st,*.42s" label="Resources" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
       <Directory description="Template Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="mobile_dbapp.4ad,dbapp.4st" label="Resources_dbapp" recursive="false" sourceDirectory="$(GSTSETUPDIR)/styles"/>
       <Directory description="Web Components" destinationDirectory="$(ProjectDir)/bin/webcomponents" label="Webcomponents" sourceDirectory="$(ProjectDir)/webcomponents"/>
     </Package>
     <Package binaryName="Minesweeper_iOS_Simulator" dependencies="781919164,212784684,715422167,313644474,400358049" description="iOS Simulator Package" label="Minesweeper_iOS_Simulator" platform="iOS Simulator">
       <DynamicProperty name="packageId" value="com.ryanhamlin.Minesweeper"/>
       <DynamicProperty name="packageLabel" value="Genero Minesweeper"/>
+      <Directory destinationDirectory="$(ProjectDir)/bin/resources" includedFiles="*.mp3" label="Assets" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
       <Directory description="Binaries" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="Binaries" recursive="false" sourceDirectory="$(ProjectDir)/bin"/>
       <Directory description="Configuration Files" destinationDirectory="$(ProjectDir)/bin" includedFiles="fglprofile,*.config" label="Config" recursive="false" sourceDirectory="$(ProjectDir)/config"/>
       <Directory description="Database" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.db" label="Database" recursive="false" sourceDirectory="$(ProjectDir)/database"/>
@@ -140,7 +144,7 @@
       <Directory description="Studio Library" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.42?" label="libgst" recursive="false" sourceDirectory="$(GSTLIBRARYDIR)/bin"/>
       <Directory destinationDirectory="$(ProjectDir)/bin/defaults" includedFiles="*.42s" label="Localisation_Defaults" sourceDirectory="$(ProjectDir)/bin/defaults"/>
       <Directory destinationDirectory="$(ProjectDir)/bin/fr" includedFiles="*.42s" label="Localisation_FR" sourceDirectory="$(ProjectDir)/bin/fr"/>
-      <Directory description="Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.4ad,*.4st,*.42s,*.mp3" label="Resources" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
+      <Directory description="Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="*.4ad,*.4st,*.42s" label="Resources" recursive="false" sourceDirectory="$(ProjectDir)/resources"/>
       <Directory description="Template Resources" destinationDirectory="$(ProjectDir)/bin" includedFiles="mobile_dbapp.4ad,dbapp.4st" label="Resources_dbapp" recursive="false" sourceDirectory="$(GSTSETUPDIR)/styles"/>
       <Directory description="Web Components" destinationDirectory="$(ProjectDir)/bin/webcomponents" label="Webcomponents" sourceDirectory="$(ProjectDir)/webcomponents"/>
     </Package>
@@ -158,6 +162,7 @@
           <File filePath="src/splash_screen.per"/>
           <File filePath="src/wc_minesweeper.per"/>
           <File filePath="src/wc_minesweeper_info.per"/>
+          <File filePath="src/wc_minesweeper_option.per"/>
           <File filePath="src/wc_minesweeper_select.per"/>
         </VirtualFolder>
         <VirtualFolder label="Tool Forms">
